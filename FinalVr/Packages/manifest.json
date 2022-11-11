@@ -6,6 +6,7 @@
       "scopes": [ "io.extendreality" ]
     }],
   "dependencies": {
+    "io.extendreality.tilia.visuals.interactablehighlighter.unity": "2.1.2",
     "io.extendreality.tilia.camerarigs.unityxr": "2.0.4",
     "io.extendreality.tilia.camerarigs.trackedalias.unity": "2.0.4",
     "io.extendreality.tilia.camerarigs.spatialsimulator.unity": "2.0.10",

@@ -252,6 +252,16 @@
       "dependencies": {},
       "url": "https://registry.npmjs.org"
     },
+    "io.extendreality.tilia.visuals.interactablehighlighter.unity": {
+      "version": "2.1.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "io.extendreality.zinnia.unity": "2.3.0",
+        "io.extendreality.tilia.interactions.interactables.unity": "2.7.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
     "io.extendreality.zinnia.unity": {
       "version": "2.3.0",
       "depth": 1,
