@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Quemable
+  - PlatoMision
+  - Gem
+  - Flor
+  - Vela
   layers:
   - Default
   - TransparentFX
