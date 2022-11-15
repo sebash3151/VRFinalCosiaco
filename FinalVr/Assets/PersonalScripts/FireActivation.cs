@@ -8,6 +8,12 @@ public class FireActivation : MonoBehaviour
     [SerializeField] GameObject Fire;
     [SerializeField] FireCounting firecount;
     [SerializeField] private bool activate = false;
+    AudioSource audio;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +23,8 @@ public class FireActivation : MonoBehaviour
             {
                 activate = true;
                 Fire.SetActive(true);
-                firecount.ActivateFire();          
+                firecount.ActivateFire();
+                audio.Play();
             }          
         }
     }

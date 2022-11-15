@@ -12,6 +12,12 @@ public class Interaction : MonoBehaviour
     [SerializeField] GameObject gema;
     [SerializeField] Material material;
     [SerializeField] bool vainosiodelmaterial = true;
+    [SerializeField] AudioSource audio;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -22,6 +28,7 @@ public class Interaction : MonoBehaviour
             {
                 targetMaterial.material = material;
                 gema.SetActive(true);
+                audio.Stop();
             }
         }
     }
@@ -33,6 +40,7 @@ public class Interaction : MonoBehaviour
             activado = true;
             if (vainosiodelmaterial)
             {
+                audio.Play();
                 targetMaterial = other.gameObject.GetComponent<MeshRenderer>();
             }
                       
