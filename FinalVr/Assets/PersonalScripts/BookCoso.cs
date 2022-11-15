@@ -8,7 +8,13 @@ public class BookCoso : MonoBehaviour
     private int estadoActual = 0;
     public GameObject ojeto;
     private int completo = 0;
-    
+    AudioSource audio;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (estadoActual == 4)
@@ -29,6 +35,7 @@ public class BookCoso : MonoBehaviour
         {
             Debug.Log("estado 0");
             estadoActual = 0;
+            audio.Play();
         }
     }
 
@@ -44,6 +51,7 @@ public class BookCoso : MonoBehaviour
         {
             Debug.Log("estado 0");
             estadoActual = 0;
+            audio.Play();
         }
         
     }
@@ -60,6 +68,7 @@ public class BookCoso : MonoBehaviour
         {
             Debug.Log("estado 0");
             estadoActual = 0;
+            audio.Play();
         }
     }
 
@@ -75,6 +84,7 @@ public class BookCoso : MonoBehaviour
         {
             Debug.Log("estado 0");
             estadoActual = 0;
+            audio.Play();
         }
     }
 }
