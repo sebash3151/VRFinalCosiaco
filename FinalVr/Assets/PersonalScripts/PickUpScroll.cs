@@ -15,45 +15,45 @@ public class PickUpScroll : MonoBehaviour
     [SerializeField] GameObject scroll4;
     [SerializeField] GameObject scrollUI4;
     private AudioSource audio;
-    private int number;
 
     private void Start()
     {
         audio = GetComponent<AudioSource>();
     }
 
-    private void Update()
-    {
-        if (number == 1)
-        {
-            scroll1.SetActive(true);
-            scrollUI1.SetActive(true);
-        }
-        else if (number == 2)
-        {
-            scroll2.SetActive(true);
-            scrollUI2.SetActive(true);
-        }
-        else if (number == 3)
-        {
-            scroll3.SetActive(true);
-            scrollUI3.SetActive(true);
-        }
-        else if (number == 4)
-        {
-            scroll4.SetActive(true);
-            scrollUI4.SetActive(true);
-        }
-        else if (number == 0)
-        {
-            scrollInitial.SetActive(true);
-            scrollInitialUI.SetActive(true);
-        }    
-    }
-
-    public void ScrollPickedUp(int numberu)
+    public void scroll0()
     {
         audio.Play();
-        number = numberu;
+        scrollInitial.SetActive(true);
+        scrollInitialUI.SetActive(true);
+    }
+
+    public void scroll1VO()
+    {
+        audio.Play();
+        scroll1.SetActive(true);
+        scrollUI1.SetActive(true);
+    }
+
+    public void scroll2VO()
+    {
+        audio.Play();
+        scroll2.SetActive(true);
+        scrollUI2.SetActive(true);
+    }
+
+    public void scroll3VO()
+    {
+        audio.Play();
+        scroll3.SetActive(true);
+        scrollUI3.SetActive(true);
+
+    }
+
+    public void scroll4VO()
+    {
+        audio.Play();
+        scroll4.SetActive(true);
+        scrollUI4.SetActive(true);
     }
 }

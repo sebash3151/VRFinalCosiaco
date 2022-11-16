@@ -8,6 +8,7 @@ public class DoorUnlick : MonoBehaviour
     [SerializeField] GameObject wall;
     [SerializeField] GameObject door;
     AudioSource audio;
+    [SerializeField] bool sonido = false;
 
     private void Start()
     {
@@ -19,6 +20,11 @@ public class DoorUnlick : MonoBehaviour
         if (Gems == 4)
         {
             Debug.Log("finish");
+            if (!sonido)
+            {
+                audio.Play();
+                sonido = true;
+            }
             audio.Play();
             wall.SetActive(false);
             door.SetActive(true);
