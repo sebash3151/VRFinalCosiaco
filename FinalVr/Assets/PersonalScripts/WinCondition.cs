@@ -9,6 +9,7 @@ public class WinCondition : MonoBehaviour
     [SerializeField] float time = 10f;
     private float timer = 0f;
     private bool win = false;
+    private bool sonido = false;
 
     private void Update()
     {
@@ -24,7 +25,12 @@ public class WinCondition : MonoBehaviour
 
     public void Winner()
     {
-        sound.Play();
-        win = true;
+        if (!sonido)
+        {
+            sound.Play();
+            win = true;
+            sonido = true;
+        }
+
     }
 }

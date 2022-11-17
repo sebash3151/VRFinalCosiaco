@@ -22,8 +22,9 @@ public class DoorUnlick : MonoBehaviour
             Debug.Log("finish");
             if (!sonido)
             {
-                audio.Play();
                 sonido = true;
+                audio.Play();
+                
             }
             audio.Play();
             wall.SetActive(false);
