@@ -11,6 +11,11 @@ public class WinCondition : MonoBehaviour
     private bool win = false;
     private bool sonido = false;
 
+    private void Start()
+    {
+        sound = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         if (win)

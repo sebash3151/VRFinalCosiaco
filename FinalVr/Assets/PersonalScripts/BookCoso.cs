@@ -17,7 +17,7 @@ public class BookCoso : MonoBehaviour
 
     void Update()
     {
-        if (estadoActual == 4)
+        if (completo == 4)
         {
             ojeto.SetActive(true);
         }
@@ -25,7 +25,8 @@ public class BookCoso : MonoBehaviour
 
     public void Uno()
     {
-        if (estadoActual == 0)
+        completo++;
+        /*if (estadoActual == 0)
         {
             Debug.Log("estado 1");
             estado = 1;
@@ -36,7 +37,7 @@ public class BookCoso : MonoBehaviour
             Debug.Log("estado 0");
             estadoActual = 0;
             audio.Play();
-        }
+        }*/
     }
 
     public void Dos()
